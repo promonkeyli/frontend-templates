@@ -11,24 +11,28 @@
 		"commit": "git add . && git cz"
 	},
 	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react": "19.0.0-beta-26f2496093-20240514",
+		"react-dom": "19.0.0-beta-26f2496093-20240514"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
 		"@commitlint/cli": "^19.3.0",
 		"@commitlint/config-conventional": "^19.2.2",
 		"@types/node": "^20.12.12",
-		"@types/react": "^18.2.66",
-		"@types/react-dom": "^18.2.22",
 		"@vitejs/plugin-react-swc": "^3.5.0",
 		"commitizen": "^4.3.0",
 		"cz-git": "^1.9.1",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
 		"typescript": "^5.2.2",
-		"vite": "^5.2.0"
+		"vite": "^5.2.0",
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta"
 	},
+  "overrides": {
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta"
+  },
 	"config": {
 		"commitizen": {
 			"path": "node_modules/cz-git"
