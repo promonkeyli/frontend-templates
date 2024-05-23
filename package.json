@@ -3,35 +3,20 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite --host",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
 		"prepare": "husky",
 		"lint": "biome lint --apply --no-errors-on-unmatched",
 		"commit": "git add . && git cz"
-	},
-	"dependencies": {
-		"react": "19.0.0-beta-26f2496093-20240514",
-		"react-dom": "19.0.0-beta-26f2496093-20240514"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
 		"@commitlint/cli": "^19.3.0",
 		"@commitlint/config-conventional": "^19.2.2",
 		"@types/node": "^20.12.12",
-		"@vitejs/plugin-react-swc": "^3.5.0",
 		"commitizen": "^4.3.0",
 		"cz-git": "^1.9.1",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
-		"typescript": "^5.2.2",
-		"vite": "^5.2.0",
-		"@types/react": "npm:types-react@beta",
-		"@types/react-dom": "npm:types-react-dom@beta"
-	},
-	"overrides": {
-		"@types/react": "npm:types-react@beta",
-		"@types/react-dom": "npm:types-react-dom@beta"
+		"typescript": "^5.2.2"
 	},
 	"config": {
 		"commitizen": {
