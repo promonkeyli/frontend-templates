@@ -7,7 +7,7 @@
 		"preview": "vite preview",
 		"prepare": "husky",
 		"lint": "biome lint --apply --no-errors-on-unmatched",
-		"commit": "git add . && git cz"
+		"commit": "git add . && git-cz"
 	},
 	"dependencies": {
 		"react": "19.0.0-beta-26f2496093-20240514",
@@ -20,7 +20,8 @@
 		"@types/node": "^20.12.12",
 		"@vitejs/plugin-react-swc": "^3.5.0",
 		"commitizen": "^4.3.0",
-		"cz-git": "^1.9.1",
+		"conventional-changelog-cli": "^5.0.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
 		"typescript": "^5.2.2",
@@ -34,7 +35,7 @@
 	},
 	"config": {
 		"commitizen": {
-			"path": "node_modules/cz-git"
+			"path": "cz-conventional-changelog"
 		}
 	}
 }
